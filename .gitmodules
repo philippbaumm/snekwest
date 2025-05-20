@@ -1,0 +1,3 @@
+[submodule "python-requests"]
+	path = python-requests
+	url = https://github.com/psf/requests.git
