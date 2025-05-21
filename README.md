@@ -1,1 +1,2 @@
-# requests-rs
+# Snekwest
+A blazingly fast, memory-safe HTTP client ecosystem for Python, powered by Rust's reqwest. Starting as a drop-in replacement for requests, Snekwest expands to cover aiohttp and Python's free-threaded mode, delivering native performance with the APIs you already know.
