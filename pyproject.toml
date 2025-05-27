@@ -8,16 +8,27 @@ version = "0.1.0"
 description = "A blazingly fast, memory-safe HTTP client ecosystem for Python, powered by Rust's reqwest."
 readme = "README.md"
 requires-python = ">=3.8"
-dependencies = ["maturin>=1.8.6"]
+dependencies = ["maturin>=1.8.6", "patchelf>=0.17.2.2"]
 classifiers = [
     "Programming Language :: Rust",
     "Programming Language :: Python :: Implementation :: CPython",
     "Programming Language :: Python :: Implementation :: PyPy",
 ]
-dynamic = ["version"]
 
 [tool.maturin]
 features = ["pyo3/extension-module"]
+python-source = "python"
+module-name = "snekwest._bindings"
+
+[tool.mypy]
+exclude = ["python-requests/"]
+
+[tool.pyright]
+exclude = ["python-requests/"]
 
 [tool.ruff]
-lint.extend-select = ["ALL"]
+# lint.extend-select = ["ALL"]
+exclude = ["python-requests/"]
+
+[dependency-groups]
+dev = ["pytest>=8.3.5"]
