@@ -4,9 +4,7 @@
 
 **A blazingly fast, memory-safe HTTP client ecosystem for Python, powered by Rust’s [`reqwest`](https://docs.rs/reqwest/).**
 
-Snekwest is a modern rewrite of Python's beloved [`requests`](https://docs.python-requests.org/en/latest/), powered by Rust for performance, safety, and future-proof concurrency. It starts as a drop-in replacement for `requests`, Snekwest expands to cover [`aiohttp`](https://docs.aiohttp.org/en/stable/) and Python's free-threaded mode [free-threaded mode](https://docs.python.org/3.12/whatsnew/3.12.html#free-threaded-cpython).
-
----
+Snekwest is a modern rewrite of Python's beloved [`requests`](https://docs.python-requests.org/en/latest/), powered by Rust for performance, safety, and future-proof concurrency. It starts as a drop-in replacement for `requests`, Snekwest expands to cover [`aiohttp`](https://docs.aiohttp.org/en/stable/) and Python's [free-threaded mode](https://docs.python.org/3.12/whatsnew/3.12.html#free-threaded-cpython).
 
 ## 🚀 Features
 
@@ -14,9 +12,6 @@ Snekwest is a modern rewrite of Python's beloved [`requests`](https://docs.pytho
 - ⚡ **Backed by Rust's `reqwest`** for speed, security, and low memory usage
 - 🧵 Roadmap includes full async support and free-threaded Python
 - 📦 Easy to install using [`uv`](https://github.com/astral-sh/uv) or `pip`
-
----
-
 
 ## 📦 Installation
 
@@ -67,4 +62,17 @@ Snekwest follows a structured milestone versioning strategy inspired by semantic
 
 > Before `1.0.0`, expect breaking changes between minor versions.
 
-Milestones give users and contributors a clear sense of project direction and maturity.
+## 🤝 Contributing
+
+Contributions are welcome! Whether you're fixing bugs, adding features, improving documentation, or reporting issues, we'd love to have your help.
+
+**Ways to contribute:**
+- 🐛 Report bugs or request features via [GitHub Issues](https://github.com/your-username/snekwest/issues)
+- 🔧 Submit pull requests for bug fixes or new features
+- 📚 Improve documentation or add examples
+- 🧪 Write tests to improve coverage
+- 💬 Join discussions and help other users
+
+## 📄 License
+
+Snekwest is released under the [Apache 2.0 License](LICENSE). This means you can use, modify, and distribute it freely, including for commercial purposes.
